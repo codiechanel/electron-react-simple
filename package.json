@@ -1,5 +1,5 @@
 {
-  "name": "electron-quick-start",
+  "name": "electron-react-simple",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
@@ -7,7 +7,7 @@
     "start": "electron .",
     "watch": "webpack -d --progress --colors --watch"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/codiechanel/electron-react-simple",
   "keywords": [
     "Electron",
     "quick",
