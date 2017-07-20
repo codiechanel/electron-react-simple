@@ -6,6 +6,7 @@ const BrowserWindow = electron.BrowserWindow
 
 const path = require('path')
 const url = require('url')
+var chokidar = require("chokidar");
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -21,6 +22,12 @@ function createWindow () {
     protocol: 'file:',
     slashes: true
   }))
+  var windowListener = chokidar
+    .watch(__dirname + "/bundle.js")
+    .on("change", (thePath, stats) => {
+      console.log("window changed");
+      mainWindow.reload();
+    });
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
@@ -31,6 +38,7 @@ function createWindow () {
     // in an array if your app supports multi windows, this is the time
     // when you should delete the corresponding element.
     mainWindow = null
+    windowListener.close();
   })
 }
 

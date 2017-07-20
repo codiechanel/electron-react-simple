@@ -20,5 +20,7 @@
   "devDependencies": {
   
   },
-  "dependencies": {}
+  "dependencies": {
+      "chokidar": "^1.7.0"
+  }
 }
