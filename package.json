@@ -17,11 +17,9 @@
   ],
   "author": "GitHub",
   "license": "CC0-1.0",
-  "devDependencies": {
-  
-  },
+  "devDependencies": {},
   "dependencies": {
-      "chokidar": "^1.7.0",
+    "chokidar": "^1.7.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   }
