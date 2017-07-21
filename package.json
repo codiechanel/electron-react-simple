@@ -21,6 +21,8 @@
   
   },
   "dependencies": {
-      "chokidar": "^1.7.0"
+      "chokidar": "^1.7.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   }
 }
